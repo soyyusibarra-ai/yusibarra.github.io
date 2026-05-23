@@ -1,0 +1,245 @@
+index.html<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clase Gratis Franquicia IA — Yus Ibarra</title>
+<!-- META PIXEL CODE -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'TU_PIXEL_ID_AQUI');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=TU_PIXEL_ID_AQUI&ev=PageView&noscript=1"/></noscript>
+<!-- FIN META PIXEL -->
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #1a1a2e; color: #f7f4ee; line-height: 1.6; }
+
+  /* NAVBAR */
+  .navbar { background: #12122a; padding: 0.75rem 1.5rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #2a2a4a; }
+  .nav-logo { background: #6B2FD9; border-radius: 6px; padding: 4px 12px; }
+  .nav-logo span { color: #fff; font-size: 14px; font-weight: 600; }
+  .nav-brand { color: #c9b180; font-size: 13px; }
+
+  /* HERO */
+  .hero { background: linear-gradient(160deg, #1a1a2e 60%, #2a1a4e 100%); padding: 2.5rem 1.5rem 2rem; text-align: center; }
+  .live-badge { display: inline-flex; align-items: center; gap: 6px; background: #2a2a4a; border: 1px solid #3a3a6a; border-radius: 20px; padding: 5px 14px; font-size: 12px; color: #b0a8e0; margin-bottom: 1.25rem; }
+  .live-dot { width: 8px; height: 8px; border-radius: 50%; background: #ff4444; animation: pulse 1.5s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .hero h1 { font-size: clamp(22px, 5vw, 32px); font-weight: 700; line-height: 1.3; margin-bottom: 0.75rem; color: #f7f4ee; }
+  .hero h1 .highlight { color: #c9b180; }
+  .hero .sub { font-size: 15px; color: #b0a89a; margin-bottom: 1.5rem; }
+
+  /* TATA PHOTO PLACEHOLDER */
+  .tata-wrap { margin: 0 auto 1.5rem; max-width: 280px; }
+  .tata-img { width: 100%; border-radius: 16px; border: 2px solid #6B2FD9; object-fit: cover; display: block; }
+  .tata-img-placeholder { width: 100%; height: 300px; border-radius: 16px; border: 2px solid #6B2FD9; background: #2a2a4a; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #6B2FD9; font-size: 14px; gap: 8px; }
+
+  .tata-label { background: #2a2a4a; border-radius: 10px; padding: 0.6rem 1rem; margin-top: 0.75rem; display: inline-block; }
+  .tata-label p { color: #f7f4ee; font-size: 14px; font-weight: 600; }
+  .tata-label span { color: #9d7fe0; font-size: 12px; }
+
+  /* CTA BUTTON */
+  .btn-cta { display: block; background: #25d366; color: #fff; text-decoration: none; font-size: 16px; font-weight: 700; padding: 16px 24px; border-radius: 10px; text-align: center; max-width: 360px; margin: 0 auto 0.5rem; border: none; cursor: pointer; letter-spacing: 0.3px; transition: transform 0.15s, background 0.15s; }
+  .btn-cta:hover { background: #1fb855; transform: scale(1.02); }
+  .btn-cta.dark { background: #2f2f2f; }
+  .btn-cta.dark:hover { background: #1a1a1a; }
+  .secure { text-align: center; font-size: 12px; color: #666; margin-bottom: 0.25rem; }
+
+  /* FECHA */
+  .fecha-bar { background: #12122a; border: 1px solid #2a2a4a; border-radius: 10px; padding: 0.75rem 1rem; max-width: 360px; margin: 1rem auto 0; display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .fecha-bar span { color: #c9b180; font-size: 13px; font-weight: 600; }
+  .fecha-bar small { color: #888; font-size: 12px; }
+
+  /* YUS SECTION */
+  .yus-section { background: #12122a; padding: 2rem 1.5rem; }
+  .yus-inner { max-width: 480px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+  .yus-img-wrap { width: 110px; height: 110px; border-radius: 50%; border: 3px solid #6c8f7b; overflow: hidden; flex-shrink: 0; background: #2a2a4a; display: flex; align-items: center; justify-content: center; }
+  .yus-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+  .yus-initials { color: #6c8f7b; font-size: 28px; font-weight: 700; }
+  .yus-quote { background: #1e1e38; border-left: 3px solid #6c8f7b; border-radius: 0 10px 10px 0; padding: 1rem 1.25rem; }
+  .yus-quote p { font-size: 14px; color: #e9e3d6; font-style: italic; line-height: 1.7; }
+  .yus-quote .yus-name { color: #6c8f7b; font-size: 13px; font-weight: 600; margin-top: 8px; font-style: normal; }
+
+  /* QUÉ VAS A APRENDER */
+  .learn-section { background: #1a1a2e; padding: 2rem 1.5rem; }
+  .section-title { text-align: center; font-size: 19px; font-weight: 700; color: #f7f4ee; margin-bottom: 1.25rem; }
+  .learn-list { max-width: 440px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+  .learn-item { background: #2a2a4a; border-radius: 10px; padding: 0.9rem 1rem; display: flex; align-items: flex-start; gap: 10px; }
+  .learn-icon { color: #6c8f7b; font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+  .learn-item p { font-size: 14px; color: #e9e3d6; line-height: 1.5; }
+
+  /* TESTIMONIOS */
+  .testimonios { background: #12122a; padding: 2rem 1.5rem; }
+  .testi-grid { max-width: 480px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+  .testi-card { background: #1e1e38; border: 1px solid #2a2a4a; border-radius: 12px; padding: 1rem 1.25rem; }
+  .testi-name { color: #f7f4ee; font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+  .testi-amount { color: #c9b180; font-size: 22px; font-weight: 700; }
+  .testi-sub { color: #888; font-size: 12px; margin-top: 2px; }
+  .testi-footer { text-align: center; margin-top: 1.25rem; }
+  .testi-footer p { font-size: 15px; color: #e9e3d6; font-style: italic; }
+  .testi-footer strong { color: #c9b180; }
+
+  /* CTA FINAL */
+  .cta-final { background: #6c8f7b; padding: 2rem 1.5rem; text-align: center; }
+  .cta-final .badge { display: inline-flex; align-items: center; gap: 6px; background: #2f2f2f; border-radius: 20px; padding: 5px 14px; font-size: 12px; color: #f7f4ee; margin-bottom: 1rem; }
+  .cta-final h2 { font-size: 20px; font-weight: 700; color: #f7f4ee; margin-bottom: 1.25rem; line-height: 1.4; }
+
+  /* FOOTER */
+  footer { background: #0d0d1f; padding: 1.25rem 1.5rem; text-align: center; border-top: 1px solid #1a1a3a; }
+  footer .nav-logo { display: inline-block; margin-bottom: 0.5rem; }
+  footer p { font-size: 12px; color: #555; margin-top: 4px; }
+  footer .yus-footer { color: #6c8f7b; font-size: 13px; margin-bottom: 4px; }
+
+  /* WHATSAPP FLOTANTE */
+  .wa-float { position: fixed; bottom: 20px; right: 20px; z-index: 999; }
+  .wa-float a { width: 54px; height: 54px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 12px rgba(37,211,102,0.4); transition: transform 0.2s; }
+  .wa-float a:hover { transform: scale(1.1); }
+  .wa-float svg { width: 28px; height: 28px; fill: #fff; }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo"><span>Franquicia IA</span></div>
+  <span class="nav-brand">con Yus Ibarra</span>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="live-badge">
+    <span class="live-dot"></span>
+    Clase en vivo · Cupos limitados
+  </div>
+
+  <h1>Así es como nuestros franquiciados están generando entre <span class="highlight">$450 y $900 dólares</span> cada semana desde su celular</h1>
+  <p class="sub">Regístrate a la clase gratuita donde vamos a mostrar el paso a paso exacto que están usando para lograrlo.</p>
+
+  <!-- FOTO TATA — reemplaza src con la URL real de la foto de Tata -->
+  <div class="tata-wrap">
+    <div class="tata-img-placeholder">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#6B2FD9" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      <span>Foto de Tata Salazar</span>
+      <small style="color:#555;font-size:11px;">Reemplazar con imagen real</small>
+    </div>
+    <div class="tata-label">
+      <p>Tata Salazar</p>
+      <span>Creadora de Franquicia IA</span>
+    </div>
+  </div>
+
+  <a href="https://chat.whatsapp.com/Ij4i5piKq5VIi945OFeVSH" class="btn-cta" onclick="fbq('track','Lead')">
+    🟢 RESERVA MI LUGAR GRATIS
+  </a>
+  <p class="secure">🔒 Tu información está segura</p>
+
+  <div class="fecha-bar">
+    <span>📅 1 de junio · 7:05 PM</span>
+    <small>hora Colombia</small>
+  </div>
+</section>
+
+<!-- YUS SECTION -->
+<section class="yus-section">
+  <div class="yus-inner">
+    <!-- FOTO YUS — reemplaza el contenido del div con tu img real -->
+    <div class="yus-img-wrap">
+      <span class="yus-initials">YI</span>
+      <!-- <img src="URL_FOTO_YUS" alt="Yus Ibarra"> -->
+    </div>
+    <div class="yus-quote">
+      <p>"Soy Yus, profesional y mamá como tú. Cuando encontré Franquicia IA entendí que había una forma diferente de generar ingresos. Hoy te abro la puerta para que lo veas con tus propios ojos."</p>
+      <p class="yus-name">— Yus Ibarra · @soy.yusibarra</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ VAS A APRENDER -->
+<section class="learn-section">
+  <h2 class="section-title">En esta clase gratuita vas a descubrir:</h2>
+  <div class="learn-list">
+    <div class="learn-item">
+      <span class="learn-icon">✅</span>
+      <p>El modelo exacto que están usando nuestros franquiciados para generar ingresos en dólares semana a semana</p>
+    </div>
+    <div class="learn-item">
+      <span class="learn-icon">✅</span>
+      <p>Cómo funciona Franquicia IA paso a paso desde tu celular, sin experiencia previa</p>
+    </div>
+    <div class="learn-item">
+      <span class="learn-icon">✅</span>
+      <p>Por qué la inteligencia artificial está cambiando la forma de ganar dinero en internet hoy</p>
+    </div>
+    <div class="learn-item">
+      <span class="learn-icon">✅</span>
+      <p>Cómo mamás y profesionales están construyendo su libertad financiera desde casa</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="testimonios">
+  <h2 class="section-title">Nuestros franquiciados ya lo están logrando:</h2>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <p class="testi-name">Dante Federico Juarez</p>
+      <p class="testi-amount">$25.540 USD</p>
+      <p class="testi-sub">Franquiciado activo</p>
+    </div>
+    <div class="testi-card">
+      <p class="testi-name">Ivonne Sepúlveda</p>
+      <p class="testi-amount">$20.000 USD</p>
+      <p class="testi-sub">Franquiciada activa</p>
+    </div>
+    <div class="testi-card">
+      <p class="testi-name">Shtefany Ahumada</p>
+      <p class="testi-amount">$13.513 USD</p>
+      <p class="testi-sub">Franquiciada activa</p>
+    </div>
+  </div>
+  <div class="testi-footer">
+    <p>Y tú puedes ser la próxima.<br><strong>Solo necesitas ver cómo se hace.</strong></p>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="badge">
+    <span class="live-dot"></span>
+    Clase en vivo · Cupos limitados
+  </div>
+  <h2>¿Lista para descubrir cómo funciona Franquicia IA?</h2>
+  <a href="https://chat.whatsapp.com/Ij4i5piKq5VIi945OFeVSH" class="btn-cta dark" onclick="fbq('track','Lead')">
+    🟢 ÚNETE AL GRUPO DE WHATSAPP AHORA
+  </a>
+  <p class="secure" style="margin-top:10px;">🔒 Tu información está segura</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="nav-logo"><span>Franquicia IA</span></div>
+  <p class="yus-footer">Yus Ibarra · @soy.yusibarra</p>
+  <p>© 2025 Todos los derechos reservados</p>
+  <p style="margin-top:4px;font-size:11px;color:#333;">Este sitio no es parte de Facebook Inc. ni está respaldado por Facebook.</p>
+</footer>
+
+<!-- WHATSAPP FLOTANTE -->
+<div class="wa-float">
+  <a href="https://chat.whatsapp.com/Ij4i5piKq5VIi945OFeVSH" target="_blank" aria-label="Unirse al WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+</div>
+
+</body>
+</html>
